@@ -1,6 +1,11 @@
 #vcs workflow
 terraform {
-
+  cloud {
+    organization = "asyed5839"
+    workspaces {
+      name = "vcs-terraform"
+    }
+  }
 }
 
 provider "aws" {
